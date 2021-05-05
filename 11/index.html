@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration</title>
+</head>
+
+<style>
+    #num1, #num2, #num3, #date, #date1, #month, #month1, #year, #year1,#zip1, #zip2, #phone1, #phone2, #phone3, select {
+        width: 5%;
+    }
+</style>
+<body>
+    <form action="display" method="post">
+        <table>
+            <tr>
+                <th>Account Type : </th>
+                <td><input type="radio" name="account" id="individual" value="Individual">Individual <br><input type="radio" name="account" id="Entry" value="Entry">Entry</td>
+            </tr>
+
+            <tr>
+                <th>First Name : </th>
+                <td><input type="text" name="first" id="first"></td>
+            </tr>
+
+            <tr>
+                <th>Middle Name or Initial : </th>
+                <td><input type="text" name="middle" id="middle"></td>
+            </tr>
+
+            <tr>
+                <th>Last Name : </th>
+                <td><input type="text" name="last" id="last"></td>
+            </tr>
+
+            <tr>
+                <th>Suffix : </th>
+                <td><select name="suffix" id="suffix">
+                    <option value="">--</option>
+                    <option value="">--</option>
+                    <option value="">--</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <th>Taxpayer Identification Number : </th>
+                <td><input type="text" name="num" id="num1"> - <input type="text" name="num" id="num2"> - <input type="text" name="num" id="num3"></td>
+            </tr>
+
+            <tr>
+                <th>Date of Birth : </th>
+                <td><input type="text" name="dob" id="month"> - <input type="text" name="dob" id="date"> - <input type="text" name="dob" id="year"> (MM-DD-YYYY)</td>
+            </tr>
+
+            <tr>
+                <th>Street Address : </th>
+                <td><input type="text" name="street" id="street1"><br><input type="text" name="street" id="street2"><br><input type="text" name="street" id="street3"></td>
+            </tr>
+
+            <tr>
+                <th>City : </th>
+                <td><input type="text" name="city" id="city"></td>
+            </tr>
+
+            <tr>
+                <th>State : </th>
+                <td><select name="suffix" id="suffix">
+                    <option value="">--</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Chennai">Chennai</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <th>Zip Code : </th>
+                <td><input type="text" name="zip" id="zip1"> - <input type="text" name="zip" id="zip2"> (Plus Four - Optional)</td>
+            </tr>
+
+            <tr>
+                <th>Home : </th>
+                <td>(<input type="text" name="phone" id="phone1">) <input type="text" name="phone" id="phone2"> - <input type="text" name="phone" id="phone1"></td>
+            </tr>
+
+            <tr>
+                <th>Driver's License/State ID Number : </th>
+                <td><input type="text" name="license" id="license"></td>
+            </tr>
+
+            <tr>
+                <th>Issuing State : </th>
+                <td><select name="state" id="state">
+                    <option value="">--</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Chennai">Chennai</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <th>Expiration Date : </th>
+                <td><input type="text" name="exp" id="month1"> - <input type="text" name="exp" id="date1"> - <input type="text" name="exp" id="year1"> (MM-DD-YYYY)</td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

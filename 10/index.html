@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    input, select {
+        margin-bottom: 20px;
+    }
+
+    div {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        /* background-color: red; */
+        display: block;
+        width: 50%;
+    }
+
+    form {
+        margin-left: 20%;
+    }
+</style>
+<body>
+    <form action="display" method="post">
+        <div>
+            Name: <input type="text" name="uname" id="name"><br>
+            Email: <input type="email" name="email" id="email"><br>
+            <input type="checkbox" name="letter" id="letter">Subscribe to the News Letter <br>
+            Format of the Email <br>
+            <input type="radio" name="html" id="format" value="HTML">HTML <br>
+            <input type="radio" name="text" id="format" value="Plain Text">Plain Text <br>
+            Type of subscription you want <br>
+            <select name="subscription" id="subscription">
+                <option value="Standard-Free">Standard-Free</option>
+                <option value="Paid">Paid</option>
+                <option value="Monthly">Monthly</option>
+            </select><br>
+            Comments to the Editor: <br>
+            <textarea name="comments" id="comments" cols="30" rows="7"></textarea>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

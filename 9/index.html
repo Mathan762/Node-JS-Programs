@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Entry Page</title>
+</head>
+
+<style>
+    .buttons {
+        margin-left: 80%;
+    }
+</style>
+<body>
+    <h1>STUDENT MARKSHEET</h1>
+    <fieldset style="text-transform: uppercase; width: 70%;">
+        <legend>student information</legend>
+        <form action="/validate"method="POST">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" id="name"></td>
+                    <td>Father Name:</td>
+                    <td><input type="text" name="fathername" id="fathername"></td>
+                </tr>
+
+                <tr>
+                    <td>Institute Name:</td>
+                    <td><input type="text" name="ins_name" id="ins_name"></td>
+                    <td>Batch:</td>
+                    <td><input type="text" name="batch" id="batch"></td>
+                </tr>
+            </table>
+    </fieldset>
+
+    <fieldset style="text-transform: uppercase; width: 70%;">
+        <legend>subject marks</legend>
+        
+            <table>
+                <tr>
+                    <td>Office Automation:</td>
+                    <td><input type="number" name="office" id="office">Out of 100</td>
+                </tr>
+
+                <tr>
+                    <td>Web Designing:</td>
+                    <td><input type="number" name="web" id="web">Out of 100</td>
+                </tr>
+
+                <tr>
+                    <td>IT:</td>
+                    <td><input type="number" name="it" id="it">Out of 100</td>
+                </tr>
+
+                <tr>
+                    <td>C# Programming:</td>
+                    <td><input type="number" name="cp" id="cp">Out of 100</td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        <!-- <legend align="right"><button>Hi</button></legend> -->
+    </fieldset>
+</form>
+</body>
+</html>

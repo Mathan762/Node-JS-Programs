@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+</head>
+
+<style>
+
+    body {
+        margin:0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-stephan-seeber-1261728.jpg");
+        /*background-color: #d2d3c9;*/
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .right-side {
+        width: 30%;
+        height: 721px;
+        background-image: linear-gradient(to right, rgba(240, 84, 84, 0.9), rgba(240, 84, 84, 0.9));
+        float: right;
+        /*margin-top: -4.6%;*/
+    }
+
+    .others {
+        width:85%;
+        position: absolute;
+        height: 552px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-stephan-seeber-1261728.jpg");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        margin-top: 7%;
+        margin-left: 7%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .right-color-side {
+        width: 26%;
+        height: 552px;
+        background-color: #f05454;
+        float: right;
+        margin-top: -16.8%;
+    }
+
+    .right-color-side h2, label {
+        color: white;
+        /*position: absolute;*/
+        color: white;
+    }
+
+    form {
+        margin-left: 16%;
+        margin-top: 10%;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 80%;
+        border: none;
+        border-bottom: 1px solid grey;
+        background-color: transparent;
+        outline: none;
+        caret-color: white;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition: border-bottom-color 0.8s;
+    }
+
+    input[type="text"]:hover, input[type="password"]:hover {
+        border-bottom-color: white;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+        border-bottom-color: white;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    input {
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+    }
+
+    button {
+        width: 50%;
+        height: 30px;
+        border:none;
+        background-color: #7f5a83;
+        background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+        border-radius: 20px;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 30px;
+        margin-left: 15%;
+        transition: background-image 1s;
+    }
+
+    button:hover {
+        background-color: #bdd4e7;
+        background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    }
+
+    #welcome {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    .text {
+        margin-top: 6%;
+    }
+
+    #second {
+        color: white;
+        font-size: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .nav {
+        width: 100%;
+        height: 70px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255,255, 0.2);
+        /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));*/
+        position: absolute;
+    ;
+    }
+
+    .nav h3 {
+        /*clear: both;*/
+        float: left;
+        color: white;
+        padding: 7px;
+        margin-left: 10px;
+        margin-top: 4px;
+        transition: color 0.5s;
+    }
+
+    .nav h3:hover {
+        color: #16697a;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    .nav ul {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+    }
+
+    .nav li {
+        display: inline-block;
+        text-align: center;
+        /*float: right;*/
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        /*background-color: red;*/
+        transition: background-color 0.5s;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: white;
+        margin-right: 5px;
+        text-align: center;
+    }
+
+    .nav li:hover {
+        background-color: #393e46;
+    }
+</style>
+<body>
+<div class="nav">
+    <h3>My<br>Website</h3>
+    <ul>
+        <li><a href="" style="padding-right: 18px">Login</a></li>
+        <li style="background-color: red"><a href="">Register</a></li>
+    </ul>
+</div>
+<div class="others">
+    <div class="text" style="margin-left: 7%;">
+        <p id="welcome">Welcome, buddy</p>
+        <p style="width: 30%;" id="second">You can create a free account to get an access throughout the website</p>
+    </div>
+    <div class="right-color-side">
+        <h2>Sign Up</h2>
+
+        <form>
+            <label for="firstname">First Name</label><br>
+            <input type="text" name="firstname" id="firstname" required autocomplete="off"><br>
+            <label for="lastname">Last Name</label><br>
+            <input type="text" name="lastname" id="lastname" required autocomplete="off"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" required autocomplete="off"><br>
+            <input type="radio" id="terms" name="terms" required>
+            <label>I accept the terms of use</label><br>
+            <button>Sign Up</button>
+        </form>
+    </div>
+</div>
+
+    <div class="right-side">
+    </div>
+</body>
+</html>
